@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        body{
+            height: 100vh;
+        }
+
+        .box{
+            height: 550px;
+            width: 775px;
+            position: relative;
+            background-color: rgb(219, 243, 243);
+            top: 2%;
+            left: 25%;
+            transform: translateX(-50%, -50%)
+        }
+
+        .box1{
+            height: 300px;
+            width: 305px;
+            position: absolute;
+            background-color:  white;
+            top: 20%;
+            left: 30%;
+            transform: translateX(-50%, -50%)
+            
+        }
+
+
+        .box2{
+            height: 35px;
+            width: 175px;
+            position: absolute;
+            background-color:  rgb(82, 173, 231);
+            top: 75%;
+            left: 22%;
+            transform: translateX(-50%, -50%)
+            
+        }
+        .vertical{
+            position: relative;
+            top: 50%;
+            transform: translateY(-50%)
+        }
+
+        .horizontal{
+            position: relative;
+            left: 50%;
+            transform: translateX(-50%)
+        }
+
+        h2{
+            text-align: center;
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+            font-size: medium;
+            margin: 20px;
+            color: rgb(75, 73, 73);
+        }
+
+        h3{
+            text-align: center;
+            margin-top: -10px;
+            font-size: small;
+            font-style: italic;
+            color: grey;
+        }
+
+        h4{
+            padding: 10px;
+            color: grey;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: small;
+            border-bottom: 1px grey solid;
+            margin-left: 70px;
+            margin-right: 70px;
+            margin-top: 25px;
+        }
+    
+        h5{
+            color: rgb(255, 255, 255);
+            margin-left: 125px;
+            margin-bottom: 35px;
+            position: absolute;
+            padding: 5px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        h6{
+            text-align: center;
+            padding-top: 55px;
+            color: grey;
+
+        }
+
+        header{
+            border-bottom: 1px solid grey;
+            height: 100px;
+            text-align: left;
+        }
+       
+    </style>
+</head>
+<body>
+<header>Hankstagram</header>
+    <div class="box">
+         <div class="box1">
+            <h2>WELCOME BACK</h2>
+            <h3>Sign In</h3>
+            <h4>Email</h4>
+            <h4>Password</h4>
+            
+
+            <div class="box2"></div>
+            <h5>SIGN IN</h5>
+        <h6>I don't have an account</h6>
+          </div>
+          
+</div>
+    
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+</body>
+</html>
