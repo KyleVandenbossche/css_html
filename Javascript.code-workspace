@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "../Javascript"
+		},
+		{
+			"path": "../vandenbossche-part-one"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "vandenbossche-part-one"
+	}
+}

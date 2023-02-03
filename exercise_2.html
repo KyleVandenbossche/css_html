@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Oswald:wght@300;500&display=swap" rel="stylesheet">
+    <style>
+
+        @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Oswald:wght@300;500&display=swap');
+
+        *{
+            margin: 0px;
+            color:rgba(255, 255, 255, 0.8);
+            font-family: 'Lato', sans-serif;
+        }
+
+        header{
+            background-color: #551a8b;
+            display: flex;
+            justify-content: space-between;
+            flex-direction: row-reverse;
+
+        }
+
+        div{
+            margin: 15px;
+        
+        }
+
+        ul {
+
+            margin-left: -10px;
+            margin-top: 13px;
+        }
+
+        li{
+            display: inline;
+            padding: 5px;
+            
+            
+
+        }
+
+        @media only screen and (max-width: 768px){
+
+            header, div, ul{
+                display: flex;
+                flex-direction: column;
+                padding-left: 15px;
+
+            }
+
+            div{
+                margin-left: -10px;
+        
+            }
+
+            ul{
+                margin-top: -10px;
+                margin-left: -15px;
+            }
+
+          
+        }
+            
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <div>Grants Dog Walking!</div>
+        
+        <ul>
+            <li>Home</li>
+            <li>Prices</li>
+            <li>Contact Us</li>
+
+        </ul>
+    </header>
+</body>
+</html>

@@ -1,0 +1,220 @@
+*{
+    margin: 0px;
+    
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    
+}
+
+
+h1{
+    font-size: 15px;
+}
+
+li{
+    display: inline;
+    padding: 5px;
+    color: #69696a;
+    margin-left: -20px;
+    
+}
+
+    header, ul{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .chirpus{
+        color: #000;
+        margin-bottom: 5px;
+    }
+
+
+    body{
+        font-family: 'Open Sans', sans-serif;
+        background-color: #f9fafc; 
+    }
+
+h2{
+    margin-left: 22px;
+    height: 55px;
+    padding-top: 30px;
+    font-size: 30px;
+}
+
+#hireus{
+    margin: auto;
+}
+
+    button{
+        width: 428px;
+        background-color: #000;
+        color: #f9fafc;
+        border-radius: 50px;
+        padding: 10px;
+        margin-left: 20px;
+        font-size: 15px;
+        margin-top: 20px;
+    }
+
+    p{
+        margin-left: 25px;
+        border-left: 3px solid #69696a;
+        padding-left: 10px;
+        inline-size: 428px;
+    }
+
+    h1{
+        margin: 25px;
+    }
+
+
+footer {
+    position: fixed;
+    bottom: 0;
+    background-color:rgba(247, 193, 162, 0.7);
+    height: 50px;
+    width: 100%;
+    
+}
+
+
+div{
+  
+    margin-top: 15px;
+    margin-left: 10px;
+}
+
+
+.link1{
+    position: absolute;
+    text-decoration: none;
+    bottom: 10px;
+    right: 110px;
+    
+    
+}
+
+.link2{
+    position: absolute;
+    text-decoration: none;
+    bottom: 10px;
+    right: 60px;
+    
+    
+}
+
+.link3{
+    position: absolute;
+    text-decoration: none;
+    bottom: 10px;
+    right: 5px;
+    
+    
+}
+
+
+@media only screen and (min-width: 768px){
+    
+ header{
+    display: flex;
+    flex-direction: row;
+ }
+
+
+
+ ul{
+    display: inline;
+    padding-top: 15px;
+ }
+
+ li{
+    padding: 15px;
+ }
+
+ #hireus{
+    width: 75px;
+    height: 38px;
+    margin-left: auto;
+    
+ }
+
+ h2{
+    padding-top: 200px;
+ }
+
+ p{
+    width: 50%;
+    
+ }
+
+ button{
+    width: 50%;
+ }
+
+ #pinkcircle{
+    background: rgba(247, 136, 167, 0.6);
+    border-radius: 50%;
+    width: 215px;
+    height: 215px;
+    position: absolute;
+    top: 275px; right: 100px;
+    
+ }
+ #purplecircle{
+    background: rgba(207, 130, 213, 0.6);
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    margin-left: 150px;
+    margin-top: 50px;
+    position: absolute;
+    top: 285px; right: 30px; 
+    
+    
+    
+ }
+ #orangecircle{
+    background: rgba(247, 193, 162, 0.7);
+    border-radius: 50%;
+    width: 170px;
+    height: 170px;
+    margin-left: 125px;
+    margin-top: -35px;
+    position: absolute;
+    top: 465px; right: 30px; 
+ }
+
+
+  footer{
+    width: 100%;
+    
+  }
+
+.link1{
+    position: absolute;
+    bottom: 10px;
+    right: 110px;
+    
+    
+}
+
+.link2{
+    position: absolute;
+    bottom: 10px;
+    right: 60px;
+    
+    
+}
+
+.link3{
+    position: absolute;
+    bottom: 10px;
+    right: 5px;
+    
+    
+}
